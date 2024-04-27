@@ -1,20 +1,38 @@
-# vue-workshop-setup
+# movie-list-backend
 
-## Benodigdheden
+## Requirements
 
-- [Node](https://nodejs.org/en/download) (min v16.20.2)
-- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (min v8.19.4)
-- [Docker engine ](https://docs.docker.com/engine/install/) (Easy via Docker desktop)
-- [OMDb API Key](https://www.omdbapi.com/apikey.aspx) (Choose free: recieve an activation link and your API key)
+- [Node](https://nodejs.org/en/download) (v20)
+- [Docker Engine](https://docs.docker.com/engine/install/) (Docker Desktop)
 
-## Project setup
+## Setup
 
-clone the repository and navigate to the project directory, install the dependencies and copy the .env.example file to .env
+### Server setup
 
-```bash
-git clone git@github.com:jarivalentine/vue-workshop-backend.git ; cd vue-workshop-backend ; npm install ; cp .env.example .env
+Clone de server en installeer dependencies
+
+```sh
+git clone git@github.com:jarivalentine/vue-workshop-backend.git
+cd vue-workshop-backend
+npm install
 ```
 
-1. Run `docker compose up -d`
-2. Run `npx prisma migrate dev`
-3. Run `npm run dev`
+Database setup
+
+```sh
+cp example.env .env
+docker compose up -d
+npx prisma migrate dev
+```
+
+Vraag een OMDb API key aan
+1. Ga naar https://www.omdbapi.com/apikey.aspx
+2. Klik op FREE, vul in en submit
+3. Ga naar je email inbox en activeer de API key
+4. Paste de API key als value voor `API_KEY` in de `.env` file
+
+Start de server
+
+```sh
+npm run dev
+```
