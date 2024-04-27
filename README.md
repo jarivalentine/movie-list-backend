@@ -12,11 +12,11 @@
 Clone de server en installeer dependencies
 
 ```sh
-git clone git@github.com:jarivalentine/vue-workshop-backend.git
+git clone git@github.com:jarivalentine/movie-list-backend.git
 ```
 
 ```sh
-cd vue-workshop-backend
+cd movie-list-backend
 ```
 
 ```sh
