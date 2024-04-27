@@ -12,8 +12,8 @@
 Clone de server en installeer dependencies
 
 ```sh
-git clone git@github.com:jarivalentine/vue-workshop-backend.git
-cd vue-workshop-backend
+git clone git@github.com:jarivalentine/movie-list-backend.git
+cd movie-list-backend
 npm install
 ```
 
