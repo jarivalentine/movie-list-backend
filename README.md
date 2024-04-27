@@ -12,8 +12,14 @@
 Clone de server en installeer dependencies
 
 ```sh
-git clone git@github.com:jarivalentine/movie-list-backend.git
-cd movie-list-backend
+git clone git@github.com:jarivalentine/vue-workshop-backend.git
+```
+
+```sh
+cd vue-workshop-backend
+```
+
+```sh
 npm install
 ```
 
@@ -21,7 +27,13 @@ Database setup
 
 ```sh
 cp example.env .env
+```
+
+```sh
 docker compose up -d
+```
+
+```sh
 npx prisma migrate dev
 ```
 
