@@ -1,5 +1,7 @@
 # movie-list-backend
 
+Backend voor https://github.com/jeanbaptistevanparys/movie-list-frontend
+
 ## Requirements
 
 - [Node](https://nodejs.org/en/download) (v20)
