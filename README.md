@@ -23,21 +23,20 @@ cd movie-list-backend
 npm install
 ```
 
-Database setup
+### Database setup
 
 ```sh
-cp example.env .env
+copy example.env .env
 ```
 
-```sh
-docker compose up -d
-```
+Maak een nieuwe database aan met naam `movielist`
 
 ```sh
-npx prisma migrate dev
+npx prisma migrate dev --name init
 ```
 
 Vraag een OMDb API key aan
+
 1. Ga naar https://www.omdbapi.com/apikey.aspx
 2. Klik op FREE, vul in en submit
 3. Ga naar je email inbox en activeer de API key
